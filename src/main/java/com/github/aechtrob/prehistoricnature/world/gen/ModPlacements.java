@@ -1,9 +1,7 @@
 package com.github.aechtrob.prehistoricnature.world.gen;
 
 import com.github.aechtrob.prehistoricnature.world.features.ModConfiguredFeatures;
-import net.minecraft.data.worldgen.features.TreeFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
