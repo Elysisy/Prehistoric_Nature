@@ -1,8 +1,7 @@
 package com.github.aechtrob.prehistoricnature.world.features.tree.lepidodendron;
 
 import com.github.aechtrob.prehistoricnature.block.ModBlocks;
-import com.github.aechtrob.prehistoricnature.block.customblock.PNDecayableDirectional;
-import com.github.aechtrob.prehistoricnature.block.customblock.PNLog;
+import com.github.aechtrob.prehistoricnature.block.customblock.PNLogBlock;
 import com.github.aechtrob.prehistoricnature.world.features.tree.PNTreeFeature;
 import com.github.aechtrob.prehistoricnature.world.features.tree.PNTrunkPlacer;
 import com.google.common.collect.Lists;
@@ -47,7 +46,7 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
             placeLog(levelSimulatedReader, biConsumer, random, pos.south(), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.south(2))) {
-            biConsumer.accept(pos.south(2), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.south(2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.south(2), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.north())) {
@@ -55,7 +54,7 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
             placeLog(levelSimulatedReader, biConsumer, random, pos.north(), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.north(2))) {
-            biConsumer.accept(pos.north(2), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.north(2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.north(2), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.east())) {
@@ -63,7 +62,7 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
             placeLog(levelSimulatedReader, biConsumer, random, pos.east(), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.east(2))) {
-            biConsumer.accept(pos.east(2), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.east(2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.east(2), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.west())) {
@@ -71,7 +70,7 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
             placeLog(levelSimulatedReader, biConsumer, random, pos.west(), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.west(2))) {
-            biConsumer.accept(pos.west(2), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.west(2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.west(2), treeConfiguration);
         }
 
@@ -128,67 +127,67 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 6, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, 1))) {
-            biConsumer.accept(pos.offset(0, height + 2, 1), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, 1), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, 1), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, 2))) {
-            biConsumer.accept(pos.offset(0, height + 2, 2), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, 2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, 2), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, 3))) {
-            biConsumer.accept(pos.offset(0, height + 2, 3), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, 3), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, 3), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, 4))) {
-            biConsumer.accept(pos.offset(0, height + 2, 4), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, 4), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, 4), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, -1))) {
-            biConsumer.accept(pos.offset(0, height + 2, -1), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, -1), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, -1), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, -2))) {
-            biConsumer.accept(pos.offset(0, height + 2, -2), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, -2), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, -2), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, -3))) {
-            biConsumer.accept(pos.offset(0, height + 2, -3), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, -3), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, -3), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 2, -4))) {
-            biConsumer.accept(pos.offset(0, height + 2, -4), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 2, -4), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 2, -4), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(1, height + 2, 0))) {
-            biConsumer.accept(pos.offset(1, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(1, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(1, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(2, height + 2, 0))) {
-            biConsumer.accept(pos.offset(2, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(2, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(2, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(3, height + 2, 0))) {
-            biConsumer.accept(pos.offset(3, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(3, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(3, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(4, height + 2, 0))) {
-            biConsumer.accept(pos.offset(4, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(4, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(4, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(-1, height + 2, 0))) {
-            biConsumer.accept(pos.offset(-1, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(-1, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(-1, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(-2, height + 2, 0))) {
-            biConsumer.accept(pos.offset(-2, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(-2, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(-2, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(-3, height + 2, 0))) {
-            biConsumer.accept(pos.offset(-3, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(-3, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(-3, height + 2, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(-4, height + 2, 0))) {
-            biConsumer.accept(pos.offset(-4, height + 2, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(-4, height + 2, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(-4, height + 2, 0), treeConfiguration);
         }
 
@@ -226,19 +225,19 @@ public class LepidodendronTrunkPlacer extends PNTrunkPlacer {
         }
 
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(1, height + 5, 0))) {
-            biConsumer.accept(pos.offset(1, height + 5, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(1, height + 5, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(1, height + 5, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(-1, height + 5, 0))) {
-            biConsumer.accept(pos.offset(-1, height + 5, 0), logState.setValue(PNLog.AXIS, Direction.Axis.X));
+            biConsumer.accept(pos.offset(-1, height + 5, 0), logState.setValue(PNLogBlock.AXIS, Direction.Axis.X));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(-1, height + 5, 0), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 5, 1))) {
-            biConsumer.accept(pos.offset(0, height + 5, 1), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 5, 1), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 5, 1), treeConfiguration);
         }
         if (PNTreeFeature.canLogReplaceBlock(levelSimulatedReader, pos.offset(0, height + 5, -1))) {
-            biConsumer.accept(pos.offset(0, height + 5, -1), logState.setValue(PNLog.AXIS, Direction.Axis.Z));
+            biConsumer.accept(pos.offset(0, height + 5, -1), logState.setValue(PNLogBlock.AXIS, Direction.Axis.Z));
             placeLog(levelSimulatedReader, biConsumer, random, pos.offset(0, height + 5, -1), treeConfiguration);
         }
 

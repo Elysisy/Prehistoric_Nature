@@ -2,6 +2,7 @@ package com.github.aechtrob.prehistoricnature;
 
 import com.github.aechtrob.prehistoricnature.block.ModBlocks;
 import com.github.aechtrob.prehistoricnature.item.ModItems;
+import com.github.aechtrob.prehistoricnature.world.features.ModFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -30,6 +31,7 @@ public class PrehistoricNature
 
         ModItems.register(eventBus);
         ModBlocks.register(eventBus);
+        ModFeatures.register(eventBus);
 
         eventBus.addListener(this::setup);
         eventBus.addListener(this::setupClient);

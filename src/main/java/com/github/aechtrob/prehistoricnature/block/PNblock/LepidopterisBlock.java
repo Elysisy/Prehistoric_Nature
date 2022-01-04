@@ -21,10 +21,10 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import java.util.Map;
 import java.util.Random;
 
-public class Lepidopteris extends PNSinglePlant {
+public class LepidopterisBlock extends PNSinglePlant {
     protected static final VoxelShape SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D);
 
-    public Lepidopteris(BlockBehaviour.Properties properties) {
+    public LepidopterisBlock(BlockBehaviour.Properties properties) {
         super(properties);
     }
 

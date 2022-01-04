@@ -11,8 +11,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.MaterialColor;
 
-public class PNPlanks extends Block {
-    public PNPlanks(Properties properties) {
+public class PNPlanksBlock extends Block {
+    public PNPlanksBlock(Properties properties) {
         super(properties);
     }
 

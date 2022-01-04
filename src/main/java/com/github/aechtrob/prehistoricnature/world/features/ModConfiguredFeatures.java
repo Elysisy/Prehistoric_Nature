@@ -14,14 +14,14 @@ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSi
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 
 public class ModConfiguredFeatures {
-    public static final ConfiguredFeature<?, ?> LEPIDODENDRON = register("lepidodendron", Feature.TREE.configured(
+    public static final ConfiguredFeature<TreeConfiguration, ?> LEPIDODENDRON = register("lepidodendron", ModFeatures.LEPIDODENDRON_TREE.get().configured(
             new TreeConfiguration.TreeConfigurationBuilder(
                     BlockStateProvider.simple(ModBlocks.LEPIDODENDRON_LOG.get()),
                     new LepidodendronTrunkPlacer(0,0,0),
                     BlockStateProvider.simple(ModBlocks.LEPIDODENDRON_LEAVES.get()),
                     new LepidodendronFoliagePlacer(ConstantInt.of(0),ConstantInt.of(0),0),
                     new TwoLayersFeatureSize(0,0,0)
-            ).build())
+            ).ignoreVines().build())
     );
 
     private static <FC extends FeatureConfiguration>ConfiguredFeature<FC, ?> register(String name, ConfiguredFeature<FC, ?> configuredFeature) {
